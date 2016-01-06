@@ -18,6 +18,11 @@ set nocompatible " be iMproved, required
 set colorcolumn=80
 highlight colorcolumn ctermbg=7
 
+set t_Co=256   " This is may or may not needed.
+
+set background=light
+colorscheme PaperColor
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -66,6 +71,25 @@ Plugin 'ervandew/supertab'
 
 " Plugin for sensible
 Plugin 'tpope/vim-sensible'
+
+" Plugin for xDebug
+Plugin 'joonty/vdebug'
+
+" Plugin for snippets
+Plugin 'vim-scripts/snipMate'
+
+" Plugin for comments
+Plugin 'vim-scripts/tComment'
+
+" Plugin for matchit
+Plugin 'vim-scripts/ruby-matchit'
+Plugin 'tmhedberg/matchit'
+
+" Plugin for status line
+Plugin 'bling/vim-airline'
+
+" Plugin for paper theme
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
