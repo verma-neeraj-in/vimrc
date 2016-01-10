@@ -18,10 +18,16 @@ set nocompatible " be iMproved, required
 set colorcolumn=80
 highlight colorcolumn ctermbg=7
 
+" Highlight the current line
+set cursorline
+
 set t_Co=256   " This is may or may not needed.
 
 set background=light
 colorscheme PaperColor
+
+" Set the path of tag files
+set tags=./tags,tags;$HOME
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -75,9 +81,6 @@ Plugin 'tpope/vim-sensible'
 " Plugin for xDebug
 Plugin 'joonty/vdebug'
 
-" Plugin for snippets
-Plugin 'vim-scripts/snipMate'
-
 " Plugin for comments
 Plugin 'vim-scripts/tComment'
 
@@ -90,6 +93,36 @@ Plugin 'bling/vim-airline'
 
 " Plugin for paper theme
 Plugin 'NLKNguyen/papercolor-theme'
+
+" Plugin for indent Lines and spaces
+Plugin 'Yggdroot/indentLine'
+
+" Plugin for autocomplete code
+" Plugin 'Valloric/YouCompleteMe'
+
+" Plugin for syntax check
+Plugin 'scrooloose/syntastic'
+
+" Plugin for code snippets (Engine)
+Plugin 'SirVer/ultisnips'
+
+" Plugin for snippets in vim (Works with snippet engine)
+Plugin 'honza/vim-snippets'
+
+" Plugin for json
+Plugin 'elzr/vim-json'
+
+" Plugin to show version diffrences
+" Plugin 'mhinz/vim-signify'
+
+" Plugin for fast HTML parsing
+Plugin 'rstacruz/sparkup'
+
+" Plugin for solarized color scheme
+Plugin 'altercation/vim-colors-solarized'
+
+" Plugin for Powerline status bar
+" Plugin 'powerline/powerline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
