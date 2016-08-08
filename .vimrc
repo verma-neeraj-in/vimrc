@@ -79,9 +79,6 @@ Plugin 'joonty/vim-phpqa.git'
 " Plugin for git gutter
 Plugin 'airblade/vim-gitgutter.git'
 
-" Plugin for git
-Plugin 'motemen/git-vim'
-
 " Plugin for nerdtree
 Plugin 'scrooloose/nerdtree'
 
